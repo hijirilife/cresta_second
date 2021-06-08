@@ -495,7 +495,7 @@ img {
 }
 
 .bg-works {
-  background-image: url(/img/works-bgi@2x.jpg);
+  background-image: url(img/works-bgi@2x.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -566,15 +566,15 @@ img {
 }
 
 .service .list .service01 {
-  background-image: url(/img/service-img01@2x.jpg);
+  background-image: url(img/service-img01@2x.jpg);
 }
 
 .service .list .service02 {
-  background-image: url(/img/service-img02@2x.jpg);
+  background-image: url(img/service-img02@2x.jpg);
 }
 
 .service .list .service03 {
-  background-image: url(/img/service-img03@2x.jpg);
+  background-image: url(img/service-img03@2x.jpg);
 }
 
 .contact {
