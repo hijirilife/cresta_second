@@ -1,0 +1,55 @@
+.service {
+    padding: 100px 0 70px ;
+    .title {
+        padding: 0 4vw;
+        font-size: 3rem;
+        margin-bottom: 50px;
+        @include overTab{
+        max-width: 1000px;
+        font-size: 60px;
+        align-items: center;
+        margin: 0 auto 80px;
+        padding: 0 20px;
+        }
+    }
+    .inner {
+    }
+    .list {
+        display: block;
+        @include overTab{
+        display: flex;
+        }
+        .item {
+            width: 100%;
+            margin: 0 auto 30px;
+            @include overTab{
+            width: 33.3%;
+            }
+            a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            line-height: 320px;
+            font-size: 4rem;
+            font-weight: bold;
+            font-style: italic;
+            transition: .3s;
+            }
+            a:hover {
+                background-color: rgba(40,47,53,.7);
+                transition: .3s;
+            }
+        }
+        .service01 {
+            background-image: url(/img/service-img01@2x.jpg);
+        }
+        .service02 {
+            background-image: url(/img/service-img02@2x.jpg);
+        }
+        .service03 {
+            background-image: url(/img/service-img03@2x.jpg);
+        }
+    }
+}

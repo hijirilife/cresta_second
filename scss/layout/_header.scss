@@ -1,0 +1,121 @@
+.header {
+    padding: 5px 4vw 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+    transition: .3s;
+    @include overTab{
+    padding: 5px 30px;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        &:hover{
+            opacity: .7;
+            transition: .3s;
+            }
+        }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .site-title {
+        font-size: 26px;
+    }
+    .header-nav {
+        height: 80px;
+        @media screen and (max-width:768px){
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #282F35;
+        
+        }
+        .nav-list {
+            // flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            top: 50%;
+            margin: 314px 152px;
+            @include overTab{
+                display: flex;
+                margin:27px auto;
+            }
+            .nav-item {
+                margin: 0 0 30px;
+                @include overTab{
+                    margin-right: 30px;
+                }
+            }
+            .nav-item:last-child {
+                @include overTab{
+                    margin-right: 30px;
+                }
+            }
+        }
+        &.fixed {
+            position: fixed;
+            background-color: #282f35;
+            padding: 30px;
+            width: 100%;
+            transition: .3s;
+        }
+    }
+    .burger-btn{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 4vw;
+        @include overTab{
+        display: none;
+        }
+        .bar {
+            display: block;
+            height: 3px;
+            width: 30px;
+            background-color: #fff;
+        }
+        .bar_top{
+            margin-bottom: 8px;
+        }
+        .bar_mid{
+            margin-bottom: 8px;
+        }
+        &.close {
+            .bar_top{
+                transform: rotate(45deg) translate(8px,8px);
+                transition: .3s;
+            }
+            .bar_mid{
+                opacity: 0;
+                transition: .3s;
+            }
+            .bar_bottom{
+                transform: rotate(-45deg) translate(8px,-8px);
+                transition: .3s;
+            }
+        }
+    }
+    body.noscroll{
+        overflow: hidden;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+    }
+}

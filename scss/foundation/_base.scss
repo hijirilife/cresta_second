@@ -1,0 +1,42 @@
+
+.link-btn{
+    display: block;
+    width: 235px;
+    line-height: 60px;
+    margin: 0 auto 70px;
+    background-color: #f7d43f;
+    box-shadow: 0 0 6px #1b1310;
+    border-radius: 30px;
+    text-align: center;
+    color: #171717;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+.link-btn:hover{
+    opacity: .7;
+    transition: .3s;
+}
+.sp-br{
+    display: none;
+}
+
+// RESPONSIVE
+// @include overTab
+//--------------------------------------------------
+
+@mixin overTab {
+    @media print, screen and (min-width: 768px) {
+        @content;
+    }
+  }
+  
+  // UTILITY
+  //--------------------------------------------------
+  
+  .sp-br{
+    display: block;
+  }
+  .pc-br{
+    display: none;
+  }

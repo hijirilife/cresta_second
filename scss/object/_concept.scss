@@ -1,0 +1,59 @@
+.concept {
+    padding: 100px 0 70px ;
+    .title {
+        padding: 0 4vw;
+        font-size: 3rem;
+        margin-bottom: 50px;
+        @include overTab{
+        max-width: 1000px;
+        font-size: 60px;
+        align-items: center;
+        margin: 0 auto 80px;
+        padding: 0 20px;
+        }
+    }
+    .inner {
+        padding: 0 4vw;
+        @include overTab{
+        padding: 0 50px;
+        margin: 0 auto;
+        max-width: 1000px;
+        }
+    }
+    .lead {
+        font-size: 2rem;
+        margin-bottom: 32px;
+        @include overTab{
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.67;
+        font-weight: bolder;
+        margin-bottom: 60px;
+        }
+    }
+}
+.content {
+    display: block;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+    @include overTab{
+        display: flex;
+        margin-bottom: 70px;
+    }
+    .text {
+        margin-bottom: 30px;
+        @include overTab{
+        max-width: 440px;
+        line-height: 1.87;
+        font-weight: bold;
+        }
+    }
+    .img-wrapper {
+        width: 100%;
+        @include overTab{
+        width: 44%;
+        margin-left: 20px;
+        }
+    }
+}
