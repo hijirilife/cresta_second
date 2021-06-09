@@ -8,6 +8,13 @@
     transition: .3s;
     @include overTab{
     padding: 5px 30px;
+        &.fixed {
+            position: fixed;
+            background-color: #282f35;
+            padding: 30px;
+            width: 100%;
+            transition: .3s;
+        }
     }
     a {
         text-decoration: none;
@@ -64,13 +71,7 @@
                 }
             }
         }
-        &.fixed {
-            position: fixed;
-            background-color: #282f35;
-            padding: 30px;
-            width: 100%;
-            transition: .3s;
-        }
+        
     }
     .burger-btn{
         display: block;
